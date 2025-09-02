@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodePlay – Student Learning</title>
+    <meta
+      name="description"
+      content="CodePlay is a student learning site combining fun animations with practical coding practice: SEO, tables, forms, video, and audio."
+    />
+    <meta
+      name="keywords"
+      content="student learning, coding practice, HTML forms, tables, SEO, video, audio, animations"
+    />
+    <meta property="og:title" content="CodePlay – Student Learning" />
+    <meta
+      property="og:description"
+      content="Fun design + coding practice. Learn by doing with forms, tables, media, and subtle animations."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="canonical" href="https://example.com/" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav" aria-label="Primary">
+        <div class="brand">
+          <div class="logo">CP</div>
+          <span>CodePlay</span>
+        </div>
+        <a class="cta" href="#enroll">Enroll Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="badge">PixelPlay × CodeLearner</div>
+        <h1 id="hero-title">
+          <span class="pulse">Learn to Code</span> with Playful Pixels
+        </h1>
+        <p class="wrap" style="text-wrap: balance; max-width: 800px">
+          CodePlay is a student learning space where practice meets fun. Build
+          forms, tables, and media-rich pages while mastering SEO and smooth
+          animations.
+        </p>
+        <div class="actions">
+          <a href="#curriculum" class="cta">Explore Curriculum</a>
+          <a href="#enroll" class="cta" style="background: var(--accent)"
+            >Start Free</a
+          >
+        </div>
+      </section>
+
+      <section class="wrap" id="highlights" aria-labelledby="features">
+        <h2 id="features">Highlights</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>SEO-Ready</h3>
+            <p>
+              Clean structure, semantic headings, and descriptive metadata help
+              your pages get discovered.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Hands-on Forms</h3>
+            <p>
+              Practice inputs, validation, and accessibility in real scenarios.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Tables that Tell</h3>
+            <p>Organize study data with sortable, readable tables.</p>
+          </div>
+          <div class="card">
+            <h3>Motion that Matters</h3>
+            <p>Subtle animations guide focus and increase engagement.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="curriculum" aria-labelledby="study-plan">
+        <h2 id="study-plan">Weekly Study Plan</h2>
+        <div class="card" role="region" aria-label="Study plan table">
+          <table aria-describedby="study-plan">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Topic</th>
+                <th>Activity</th>
+                <th>Time (mins)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mon</td>
+                <td>HTML Essentials</td>
+                <td>Headings, lists, links</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td>Forms</td>
+                <td>Inputs, validation</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td>Tables</td>
+                <td>Layout and semantics</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Thu</td>
+                <td>Media</td>
+                <td>Images, video, audio</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td>SEO & Accessibility</td>
+                <td>Meta, headings, alt</td>
+                <td>30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="wrap" id="enroll" aria-labelledby="enroll-title">
+        <h2 id="enroll-title">Enroll or Ask a Question</h2>
+        <form action="#" method="post">
+          <div class="row">
+            <div>
+              <label for="fullName">Full Name</label>
+              <input
+                id="fullName"
+                name="fullName"
+                type="text"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="track">Learning Track</label>
+              <select id="track" name="track" required>
+                <option value="">Choose one</option>
+                <option>HTML Basics</option>
+                <option>Forms & Validation</option>
+                <option>Tables & Data</option>
+                <option>Media & Animations</option>
+              </select>
+            </div>
+            <div>
+              <label for="level">Current Level</label>
+              <div style="display: flex; gap: 12px; align-items: center">
+                <label
+                  ><input type="radio" name="level" value="beginner" required />
+                  Beginner</label
+                >
+                <label
+                  ><input type="radio" name="level" value="intermediate" />
+                  Intermediate</label
+                >
+                <label
+                  ><input type="radio" name="level" value="advanced" />
+                  Advanced</label
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="focus">Focus Area</label>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap">
+              <label
+                ><input type="checkbox" name="focus" value="seo" /> SEO</label
+              >
+              <label
+                ><input type="checkbox" name="focus" value="forms" />
+                Forms</label
+              >
+              <label
+                ><input type="checkbox" name="focus" value="tables" />
+                Tables</label
+              >
+              <label
+                ><input type="checkbox" name="focus" value="media" />
+                Media</label
+              >
+              <label
+                ><input type="checkbox" name="focus" value="animations" />
+                Animations</label
+              >
+            </div>
+          </div>
+          <div>
+            <label for="intensity">Study Intensity (0–100)</label>
+            <input
+              id="intensity"
+              name="intensity"
+              type="range"
+              min="0"
+              max="100"
+              value="60"
+            />
+          </div>
+          <div>
+            <label for="message">Question or Note</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="How can we help?"
+              required
+            ></textarea>
+          </div>
+          <div class="actions">
+            <button class="btn" type="submit">Submit</button>
+            <button
+              class="btn"
+              type="reset"
+              style="background: linear-gradient(90deg, #64748b, #334155)"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="wrap" id="media" aria-labelledby="media-title">
+        <h2 id="media-title">Learn by Watching and Listening</h2>
+        <div class="media">
+          <video controls preload="metadata">
+            <source src="coding.mp4" type="video/mp4" />
+          </video>
+          <audio controls preload="metadata">
+            <source src="sample.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="marquee" aria-hidden="true">
+          <span
+            >Tips: Use headings logically • Provide alt text for images • Keep
+            forms accessible • Prefer meaningful link text • Optimize media
+            size</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        © <span id="y"></span> CodePlay • Student Learning. Built with HTML,
+        CSS, and a dash of motion.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
